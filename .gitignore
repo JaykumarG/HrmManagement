@@ -1,0 +1,41 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+media/
+staticfiles/
+
+# If you're using collected static files
+/static/
+/media/
+
+# Environment variables and local settings
+.env
+*.env
+.env.*
+
+# VSCode or other editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.d*
