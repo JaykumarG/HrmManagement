@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     
     # Third-party apps
     'rest_framework',
+    'rest_framework_simplejwt',
     'corsheaders',
     'drf_yasg',
 
@@ -149,7 +150,10 @@ CORS_ALLOW_ALL_ORIGINS = True
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ]
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
 
 # Celery Configuration
@@ -162,3 +166,5 @@ CELERY_TIMEZONE = 'Asia/Kolkata'
 
 
 #---------------------------------------------------------------------------------------------------#
+
+AUTH_USER_MODEL = 'hrmapp.User'

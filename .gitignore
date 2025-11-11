@@ -39,3 +39,8 @@ venv.bak/
 # Byte-compiled / optimized / DLL files
 *.so
 *.d*
+
+
+# Ignore all migration files in hrmapp
+hrmapp/migrations/*.py
+!hrmapp/migrations/__init__.py
